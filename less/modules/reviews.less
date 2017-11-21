@@ -1,0 +1,110 @@
+.reviews__wrapper{
+  //padding-top: 5px;
+  //display: none;
+  .h2{
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  .h3{
+    margin-top: 52px;
+  }
+}
+
+.reviews{
+  .flex_display();
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.review__detailed{
+  .flex_display();
+  flex: 0 1 60%;
+}
+
+.review__img-big{
+  //flex: 0 1 50%;
+  .size(175px, 175px);
+  //height: 350px;
+  margin-right: 77px;
+  position: relative;
+  &:after{
+    content: '';
+    display: block;
+    .size(99%, 98%);
+    border: 2px solid @yellowColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  img{
+    .square(100%);
+  }
+}
+
+.review__client-info{
+  flex: 0 1 50%;
+  .size(0%, 100%);
+}
+
+.cl__client-name{
+  display: block;
+  font-size: 21px;
+  letter-spacing: 1px;
+  font-family: @AmazingGrotesk;
+  font-weight:600;
+  text-decoration: none;
+  color: @textColor;
+  margin-top: -6px;
+}
+
+.cl__client-profession{
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: @textColor;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  white-space: pre-line;
+}
+
+.review__content{
+  font-size: 14px;
+  margin-top: 25px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.clients-list{
+  .flex_display();
+  flex: 0 1 auto;
+  flex-direction: column;
+}
+
+.cl__item{
+  .flex_display();
+  margin-bottom: 14px;
+}
+
+.cl__img-small{
+  display: inline-flex;
+  .size(55px, 50px);
+  position: relative;
+  margin-right: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:after{
+    content: '';
+    display: block;
+    .size(98%, 96%);
+    border: 2px solid @yellowColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+

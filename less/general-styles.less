@@ -1,0 +1,123 @@
+.btn{
+  font-size: 12px;
+  padding: 11px 19px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  .transition(0.3s all ease);
+  letter-spacing: 0.9px;
+}
+
+.btn__highlighted{
+  background-color: @yellowColor;
+  color: #000;
+  &:hover{
+    color: #fff;
+  }
+  &:active{
+    color: @yellowColor;
+    background-color: #fff;
+    border: 1px solid @yellowColor;
+  }
+}
+
+.btn__invert{
+  background-color: #fff;
+  border: 1px solid @yellowColor;
+  color: @textColor;
+  &:hover{
+    color: @yellowColor;
+  }
+  &:active{
+    background-color: @yellowColor;
+    color: #fff;
+  }
+}
+
+.btn__simple{
+  font-size: 14px;
+  color: @yellowColor;
+  &:hover,
+  &:active{
+    color: #000;
+  }
+}
+
+.main-page__main-section{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    background: url("@{rootUrl}main_bg_logo.png")no-repeat top center;
+    -webkit-background-size: cover;
+    background-size: 100% auto;
+    height: auto;
+    position: absolute;
+    top: -9%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.separator{
+  span {
+    .square(6px);
+    .border-radius(50%);
+    display: block;
+    .center();
+    position: relative;
+    margin-bottom: 60px;
+    &:before {
+      .square(6px);
+      .border-radius(50%);
+      display: inline-block;
+      top: 0;
+      left: 50%;
+      content: '';
+      margin-top: 15px;
+    }
+    &:after {
+      .square(6px);
+      .border-radius(50%);
+      display: inline-block;
+      bottom: 0;
+      right: 50%;
+      content: '';
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.separator__yellow{
+  span {
+    background-color: @yellowColor;
+    &:before {
+      background-color: @yellowColor;
+    }
+    &:after {
+      background-color: @yellowColor;
+    }
+  }
+}
+
+.separator__white{
+  span {
+    background-color: #fff;
+    &:before {
+      background-color: #fff;
+    }
+    &:after {
+      background-color: #fff;
+    }
+  }
+}
+
+input{
+  &:focus,
+  &:active{
+    border: 1px solid @yellowColor;
+  }
+
+}
