@@ -49,8 +49,8 @@
     content: '';
     display: block;
     background: url("@{rootUrl}main_bg_logo.png")no-repeat top center;
-    -webkit-background-size: cover;
-    background-size: 100% auto;
+    -webkit-background-size: 90% auto;
+    background-size: 90% auto;
     height: auto;
     position: absolute;
     top: -9%;
@@ -58,6 +58,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+    margin: auto;
   }
 }
 
@@ -119,5 +120,9 @@ input{
   &:active{
     border: 1px solid @yellowColor;
   }
+}
 
+.map{
+  .size(100%; 525px);
+  margin-top: 53px;
 }

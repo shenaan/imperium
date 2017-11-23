@@ -96,3 +96,146 @@
   margin-top: 38px;
   padding: 11px 19px;
 }
+
+.btn__mob{
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    min-height: 489px;
+  }
+
+  .header__logo {
+    margin: 30px 0 0 0;
+    .size(134px, 104px);
+  }
+
+  .header__contact {
+    margin: 66px 6px 0 0;
+    position: absolute;
+    top: -32px;
+    right: 97px;
+    font-size: 12px;
+    .header__icon {
+      margin-right: 11px;
+      margin-top: 1px;
+    }
+  }
+
+  .header__list {
+    margin: 67px 6px 0 0;
+  }
+
+  .header__list-item {
+    margin-right: 18px;
+  }
+
+  .header__list-link {
+    font-size: 12px;
+  }
+
+  .header__search {
+    .header__icon {
+      margin-top: 9px;
+    }
+  }
+
+  .header__title {
+    margin: 59px 0 5px -4px;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .header__btn {
+    margin-top: 17px;
+    padding: 11px 21px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 488px;
+    background-size: cover, cover;
+    background-position: top, 75% 67%;
+  }
+
+  .btn__mob{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 14px;
+    align-self: center;
+    span{
+      display: inline-flex;
+      .size(30px, 3px);
+      margin-bottom: 5px;
+      background-color: #fff;
+      .transition(0.3s all ease);
+    }
+    &:hover{
+      span{
+        background-color: @yellowColor;
+      }
+    }
+  }
+
+  .header__nav,
+  .header__contact,
+  .header__search{
+    display: none;
+  }
+
+  .header__logo {
+    margin: 15px 0 0 -18px;
+    .size(109px, 71px);
+  }
+
+  //.header__contact {
+  //  margin: 66px 6px 0 0;
+  //  position: absolute;
+  //  top: -32px;
+  //  right: 64px;
+  //  font-size: 12px;
+  //}
+  //
+  //.header__list-item {
+  //  margin-right: 18px;
+  //}
+  //
+  //.header__list-link {
+  //  font-size: 12px;
+  //}
+  //
+  //.header__search {
+  //  .header__icon {
+  //    margin-top: 9px;
+  //  }
+  //}
+
+  .header__title {
+    margin: 82px 0 5px -4px;
+    letter-spacing: 0.9px;
+  }
+
+  .header__subtitle {
+    font-size: 12px;
+    margin-top: 7px;
+    letter-spacing: 0.2px;
+    margin-left: -2px;
+    white-space: pre-line;
+  }
+
+  .header__btn {
+    margin-top: 43px;
+    padding: 11px 21px;
+    justify-content: center;
+  }
+}
