@@ -23,6 +23,11 @@
   .transition(0.3s all ease);
 }
 
+.contacts__list-link{
+  text-decoration: none;
+  color: @textColor;
+}
+
 .contacts__icon{
   font-size: 20px;
   color: @textColor;
@@ -58,10 +63,11 @@
   width: 100%;
   font-size: 12px;
   .placeholder(#000);
-  border: 2px solid #8d8d8d;
+  border: 1px solid #8d8d8d;
   margin-bottom: 26px;
-  //margin-left: 7px;
   padding: 7px 13px;
+  border-collapse: collapse;
+  outline: 0;
 }
 
 .contact__form-message{

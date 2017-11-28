@@ -28,6 +28,19 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="modal__search-wrapper">
+            <div class="modal__search">
+                <input type="search" placeholder="Поиск..." id="modal__search-input" required>
+                <span class="icon-search modal__search-icon"></span>
+            </div>
+
+            <a href="" class="modal__search-close">
+                <span></span> <span></span>
+            </a>
+
+        </div>
+        <div id="overlay"></div>
+
         <header class="header">
             <div class="main-container">
                 <div class="header__menu">
@@ -35,7 +48,7 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__list-item">
-                                <a href="#" class="header__list-link">Главная</a>
+                                <a href="index.html" class="header__list-link">Главная</a>
                             </li>
                             <li class="header__list-item">
                                 <a href="#" class="header__list-link">Услуги</a>
@@ -52,12 +65,22 @@
                             <li class="header__list-item">
                                 <a href="#" class="header__list-link">Контакты</a>
                             </li>
+                            <li class="header__list-item visible-sm header__list-contact">
+                                <a href="#" class="">
+                                    <span class="header__icon icon-phone"></span>380 44 332 65 50
+                                </a>
+                            </li>
+                            <li class="header__list-item visible-sm header___list-search">
+                                <a href="#" class="header__search-link">
+                                    <span class="header__icon icon-search"></span>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <a href="#" class="header__contact"><span class="header__icon icon-phone"></span>380 44 332 65 50</a>
                     <a href="#" class="header__search"><span class="header__icon icon-search"></span></a>
 
-                    <a href="#" class="btn__mob">
+                    <a href="#" id="btn__mob">
                         <span></span><span></span><span></span>
                     </a>
                 </div>
@@ -266,12 +289,12 @@
 
                             </li>
                             <li class="contacts__list-item">
-                                <span class="contacts__icon icon-email"></span>
-                                imperiumlux@gmail.com
+                                <a href="mailto:imperiumlux@gmail.com" class="contacts__list-link"><span class="contacts__icon icon-email"></span>
+                                imperiumlux@gmail.com</a>
                             </li>
                             <li class="contacts__list-item">
-                                <span class="contacts__icon icon-fb"></span>
-                                <span class="contacts__icon icon-in"></span>
+                                <a href="#"><span class="contacts__icon icon-fb"></span></a>
+                                <a href="#"><span class="contacts__icon icon-in"></span></a>
 
                             </li>
                         </ul>
@@ -334,7 +357,7 @@
 
                 <ul class="footer-nav__list" role="navigation">
                     <li class="footer-nav__list-item">
-                        <a href="#" class="footer-nav__list-link">Главная</a>
+                        <a href="index.html" class="footer-nav__list-link">Главная</a>
                     </li>
                     <li class="footer-nav__list-item">
                         <a href="#" class="footer-nav__list-link">Полезные ссылки</a>
