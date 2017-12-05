@@ -1,4 +1,6 @@
 $(document).ready(function (){
+    new WOW().init();
+
     $('#btn__mob').click(function(e){
         e.preventDefault();
         $(this).toggleClass('active');

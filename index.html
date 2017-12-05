@@ -17,6 +17,7 @@
         <!--<![endif]-->
 
         <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -60,7 +61,7 @@
                                 <a href="#" class="header__list-link">Цены</a>
                             </li>
                             <li class="header__list-item">
-                                <a href="#" class="header__list-link">О нас</a>
+                                <a href="about-us.html" class="header__list-link">О нас</a>
                             </li>
                             <li class="header__list-item">
                                 <a href="#" class="header__list-link">Контакты</a>
@@ -96,14 +97,14 @@
 
         <main class="main main-page__main-section">
             <div class="main-container">
-                <div class="about-company">
-                    <h2 class="h2 about-company__heading">
+                <div class="company-details">
+                    <h2 class="h2 company-details__heading">
                         Задача юридической компании — <br>
                         решить ваши проблемы. <br>
                         Мы знаем как это делать
                     </h2>
                     <div class="company__stats ">
-                        <div class="company__stats-item ">
+                        <div class="company__stats-item wow zoomIn" data-wow-delay="0s">
                             <span class="company__stats-number company__stats-number1">140</span>
                             <span class="company__stats-info">
                                 Количество <br>
@@ -111,7 +112,7 @@
                                 сертификатов
                             </span>
                         </div>
-                        <div class="company__stats-item ">
+                        <div class="company__stats-item wow zoomIn"  data-wow-delay="0.3s">
                             <span class="company__stats-number company__stats-number2">2020</span>
                             <span class="company__stats-info">
                                 Количество <br>
@@ -119,14 +120,14 @@
                                 компаний
                             </span>
                         </div>
-                        <div class="company__stats-item ">
+                        <div class="company__stats-item wow zoomIn"  data-wow-delay="0.6s">
                             <span class="company__stats-number company__stats-number3">5577</span>
                             <span class="company__stats-info">
                                 Количество <br>
                                 довольных клиентов
                             </span>
                         </div>
-                        <div class="company__stats-item ">
+                        <div class="company__stats-item  wow zoomIn" data-wow-delay="0.9s">
                             <span class="company__stats-number company__stats-number4 ">3444</span>
                             <span class="company__stats-info">
                                 Количество  <br>
@@ -370,7 +371,7 @@
                         <a href="#" class="footer-nav__list-link">Цены</a>
                     </li>
                     <li class="footer-nav__list-item">
-                        <a href="#" class="footer-nav__list-link">О нас</a>
+                        <a href="about-us.html" class="footer-nav__list-link">О нас</a>
                     </li>
                     <li class="footer-nav__list-item">
                         <a href="#" class="footer-nav__list-link">Контакты</a>
@@ -565,6 +566,7 @@
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0f1cW4wJCSj5IFJQpikkGRxBqlMKV-Eo&callback=initMap">
         </script>
+        <script src="js/vendor/wow.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
