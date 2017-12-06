@@ -13,14 +13,26 @@ $(document).ready(function (){
         }
     });
 
+    // $('.header__search, .header__search-link').click(function (e) {
+    //     e.preventDefault();
+    //     $('.modal__search-wrapper').addClass('active');
+    //     $('#overlay').fadeIn();
+    //
+    //     $('.modal__search-close, #overlay').on('click', function(e){
+    //         e.preventDefault();
+    //         $('.modal__search-wrapper').removeClass('active');
+    //         $('#overlay').fadeOut();
+    //     })
+    // });
+
     $('.header__search, .header__search-link').click(function (e) {
         e.preventDefault();
-        $('.modal__search-wrapper').addClass('active');
+        $('.modal__search').addClass('active');
         $('#overlay').fadeIn();
 
         $('.modal__search-close, #overlay').on('click', function(e){
             e.preventDefault();
-            $('.modal__search-wrapper').removeClass('active');
+            $('.modal__search').removeClass('active');
             $('#overlay').fadeOut();
         })
     });
